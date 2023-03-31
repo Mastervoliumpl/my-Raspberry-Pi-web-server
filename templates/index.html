@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SaaB LED Lights</title>
+    <link rel = "icon" href = 
+      "https://th.bing.com/th/id/OIP.XXkluq3JMbi2ZAhVVIrdogHaHa?pid=ImgDet&rs=1" 
+    type = "image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>LED controller</h1>
+        <img>https://th.bing.com/th/id/OIP.XXkluq3JMbi2ZAhVVIrdogHaHa?pid=ImgDet&rs=1</img>
+      </div>
+      <div class="content">
+        <div class="middle">
+          <h3>Click here:</h3>
+        </div>
+        <div class="buttons">
+          <button data-id="1" data-state="off" onclick="toggle(this)">LED 1 OFF</button>
+          <button data-id="2" data-state="off" onclick="toggle(this)">LED 2 OFF</button>
+          <button data-id="3" data-state="off" onclick="toggle(this)">LED 3 OFF</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='ServerScript.js') }}"></script>
+</html>
